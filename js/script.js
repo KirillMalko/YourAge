@@ -22,12 +22,12 @@ btnGroup2[1].onclick = function () {
     modal.style.display = null;
 }
 btn_3.onclick = function () {
-    let yearBorn = document.querySelector(".inp");
+    let yearBorn = document.querySelector(".inp").value;
     //yearBorn = parseInt(yearBorn);
     let myBorn = 2021 - yearBorn;
     console.log(myBorn);
     let out = document.querySelector(".out");
-    out.innerHTML = 'Ваш возраст' + myBorn;
+    out.innerHTML = 'Ваш возраст: ' + myBorn;
 }
 btn_4.onclick = function () {
     modal.style.borderWidth = '5px';
